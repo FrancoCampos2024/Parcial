@@ -1,0 +1,10 @@
+Mongo lo genera desde el crear que le proporciono en el mismo código.
+
+
+Articulo
+create database bd_articulo;
+
+
+Movimiento
+
+create database bd_movimiento;

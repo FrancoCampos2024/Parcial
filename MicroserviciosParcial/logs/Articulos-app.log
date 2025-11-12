@@ -23,3 +23,30 @@
 2025-11-11T18:56:59.482-05:00  INFO 5324 --- [Articulo] [http-nio-86-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2025-11-11T18:56:59.484-05:00  INFO 5324 --- [Articulo] [http-nio-86-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
 2025-11-11T18:56:59.954-05:00  INFO 5324 --- [Articulo] [http-nio-86-exec-3] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 282 ms
+2025-11-11T19:08:35.987-05:00  INFO 10532 --- [Articulo] [main] c.example.Articulo.ArticuloApplication   : Starting ArticuloApplication using Java 17.0.11 with PID 10532 (C:\Users\Leonardo Campos\Desktop\Parcial\MicroserviciosParcial\Articulo\target\classes started by Leonardo Campos in C:\Users\Leonardo Campos\Desktop\Parcial\MicroserviciosParcial)
+2025-11-11T19:08:35.990-05:00  INFO 10532 --- [Articulo] [main] c.example.Articulo.ArticuloApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-11-11T19:08:37.305-05:00  INFO 10532 --- [Articulo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-11T19:08:37.378-05:00  INFO 10532 --- [Articulo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 1 JPA repository interface.
+2025-11-11T19:08:38.476-05:00  INFO 10532 --- [Articulo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 86 (http)
+2025-11-11T19:08:38.498-05:00  INFO 10532 --- [Articulo] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-11T19:08:38.499-05:00  INFO 10532 --- [Articulo] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2025-11-11T19:08:38.610-05:00  INFO 10532 --- [Articulo] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-11T19:08:38.611-05:00  INFO 10532 --- [Articulo] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2541 ms
+2025-11-11T19:08:39.137-05:00  INFO 10532 --- [Articulo] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-11T19:08:39.333-05:00  INFO 10532 --- [Articulo] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-11-11T19:08:39.397-05:00  INFO 10532 --- [Articulo] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-11T19:08:39.891-05:00  INFO 10532 --- [Articulo] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-11T19:08:39.931-05:00  INFO 10532 --- [Articulo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-11T19:08:40.155-05:00  INFO 10532 --- [Articulo] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@60a01cb
+2025-11-11T19:08:40.158-05:00  INFO 10532 --- [Articulo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-11T19:08:41.320-05:00  INFO 10532 --- [Articulo] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-11T19:08:41.380-05:00  INFO 10532 --- [Articulo] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-11T19:08:42.262-05:00  WARN 10532 --- [Articulo] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-11T19:08:44.240-05:00  INFO 10532 --- [Articulo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 86 (http) with context path '/'
+2025-11-11T19:08:44.267-05:00  INFO 10532 --- [Articulo] [main] c.example.Articulo.ArticuloApplication   : Started ArticuloApplication in 8.731 seconds (process running for 9.087)
+2025-11-11T19:09:32.222-05:00  INFO 10532 --- [Articulo] [http-nio-86-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-11T19:09:32.223-05:00  INFO 10532 --- [Articulo] [http-nio-86-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-11T19:09:32.225-05:00  INFO 10532 --- [Articulo] [http-nio-86-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-11-11T19:09:32.654-05:00  INFO 10532 --- [Articulo] [http-nio-86-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 274 ms
+2025-11-11T19:09:43.052-05:00  INFO 10532 --- [Articulo] [http-nio-86-exec-5] c.e.Articulo.servicios.Articuloservicio  : Creando un nuevo articulos con nombre: string, precio: 0.0
+2025-11-11T19:09:43.146-05:00  INFO 10532 --- [Articulo] [http-nio-86-exec-5] c.e.Articulo.servicios.Articuloservicio  : Articulo creado con ID: 1

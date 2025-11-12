@@ -290,3 +290,28 @@ Caused by: org.hibernate.HibernateException: Unable to determine Dialect without
 2025-11-11T19:00:51.102-05:00  INFO 14652 --- [Movimiento] [http-nio-89-exec-8] c.e.M.servicio.Movimientoservicios       : Movimiento encontrado: 1
 2025-11-11T19:00:51.102-05:00  INFO 14652 --- [Movimiento] [http-nio-89-exec-8] c.e.M.servicio.Movimientoservicios       : Guardando cambios del movimiento con ID: 1
 2025-11-11T19:03:44.345-05:00  WARN 14652 --- [Movimiento] [http-nio-89-exec-9] c.e.M.e.Controladordeexcepcionesglobal   : Error de validación: cantidad: La cantidad no puede ser nula | Ruta: uri=/movimientos/crear
+2025-11-11T19:08:36.352-05:00  INFO 15224 --- [Movimiento] [main] c.e.Movimiento.MovimientoApplication     : Starting MovimientoApplication using Java 17.0.11 with PID 15224 (C:\Users\Leonardo Campos\Desktop\Parcial\MicroserviciosParcial\Movimiento\target\classes started by Leonardo Campos in C:\Users\Leonardo Campos\Desktop\Parcial\MicroserviciosParcial)
+2025-11-11T19:08:36.355-05:00  INFO 15224 --- [Movimiento] [main] c.e.Movimiento.MovimientoApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-11-11T19:08:37.607-05:00  INFO 15224 --- [Movimiento] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-11T19:08:37.682-05:00  INFO 15224 --- [Movimiento] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64 ms. Found 1 JPA repository interface.
+2025-11-11T19:08:38.756-05:00  INFO 15224 --- [Movimiento] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 89 (http)
+2025-11-11T19:08:38.788-05:00  INFO 15224 --- [Movimiento] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-11T19:08:38.793-05:00  INFO 15224 --- [Movimiento] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2025-11-11T19:08:38.947-05:00  INFO 15224 --- [Movimiento] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-11T19:08:38.948-05:00  INFO 15224 --- [Movimiento] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2509 ms
+2025-11-11T19:08:39.494-05:00  INFO 15224 --- [Movimiento] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-11T19:08:39.662-05:00  INFO 15224 --- [Movimiento] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-11-11T19:08:39.726-05:00  INFO 15224 --- [Movimiento] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-11T19:08:40.208-05:00  INFO 15224 --- [Movimiento] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-11T19:08:40.246-05:00  INFO 15224 --- [Movimiento] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-11T19:08:40.574-05:00  INFO 15224 --- [Movimiento] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@65db548
+2025-11-11T19:08:40.578-05:00  INFO 15224 --- [Movimiento] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-11T19:08:41.823-05:00  INFO 15224 --- [Movimiento] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-11T19:08:41.920-05:00  INFO 15224 --- [Movimiento] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-11T19:08:43.433-05:00  WARN 15224 --- [Movimiento] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-11T19:08:44.719-05:00  INFO 15224 --- [Movimiento] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 89 (http) with context path '/'
+2025-11-11T19:08:44.735-05:00  INFO 15224 --- [Movimiento] [main] c.e.Movimiento.MovimientoApplication     : Started MovimientoApplication in 8.899 seconds (process running for 9.278)
+2025-11-11T19:08:44.952-05:00  INFO 15224 --- [Movimiento] [http-nio-89-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-11T19:08:44.953-05:00  INFO 15224 --- [Movimiento] [http-nio-89-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-11T19:08:44.954-05:00  INFO 15224 --- [Movimiento] [http-nio-89-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-11-11T19:08:45.752-05:00  INFO 15224 --- [Movimiento] [http-nio-89-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 349 ms
