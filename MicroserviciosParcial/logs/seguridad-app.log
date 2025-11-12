@@ -1,0 +1,2 @@
+2025-11-11T19:08:38.819-05:00  INFO 3024 --- [pedido] [main] c.e.Seguridad.SeguridadApplication       : Starting SeguridadApplication using Java 17.0.11 with PID 3024 (C:\Users\Leonardo Campos\Desktop\Parcial\MicroserviciosParcial\Seguridad\target\classes started by Leonardo Campos in C:\Users\Leonardo Campos\Desktop\Parcial\MicroserviciosParcial)
+2025-11-11T19:08:38.822-05:00  INFO 3024 --- [pedido] [main] c.e.Seguridad.SeguridadApplication       : No active profile set, falling back to 1 default profile: "default"

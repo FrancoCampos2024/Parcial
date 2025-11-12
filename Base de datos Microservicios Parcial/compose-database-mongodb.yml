@@ -1,0 +1,19 @@
+version: "1"
+
+services:   
+  mongo:
+    image: mongo:5.0.2
+    container_name: database-mongo-Parcial
+    restart: always
+    environment:
+    - MONGO_INITDB_ROOT_USERNAME=admin
+    - MONGO_INITDB_ROOT_PASSWORD=Unu#2025
+    ports:
+    - 27019:27017
+    networks:
+    - EP2025 
+    
+networks:
+  EP2025:
+    name: ms-parcial-mongodb
+

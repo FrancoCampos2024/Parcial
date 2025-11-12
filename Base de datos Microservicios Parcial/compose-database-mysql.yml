@@ -1,0 +1,19 @@
+version: "1"
+
+services:
+  mysql:
+    image: mysql:8.0.26
+    container_name: database-mysql-parcial
+    restart: always
+    environment:
+    - MYSQL_ROOT_PASSWORD=Unu#2025
+    ports:
+    - 3309:3306
+    - 33061:33060
+    networks:
+    - EP2025 
+    
+networks:
+  EP2025:
+    name: ms-parcial-mysql
+

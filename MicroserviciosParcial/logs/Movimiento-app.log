@@ -1,0 +1,292 @@
+2025-11-11T18:46:57.196-05:00  INFO 24476 --- [Movimiento] [main] c.e.Movimiento.MovimientoApplication     : Starting MovimientoApplication using Java 17.0.11 with PID 24476 (C:\Users\Leonardo Campos\Desktop\MicroserviciosParcial\Movimiento\target\classes started by Leonardo Campos in C:\Users\Leonardo Campos\Desktop\MicroserviciosParcial)
+2025-11-11T18:46:57.198-05:00  INFO 24476 --- [Movimiento] [main] c.e.Movimiento.MovimientoApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-11-11T18:46:58.198-05:00  INFO 24476 --- [Movimiento] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-11T18:46:58.258-05:00  INFO 24476 --- [Movimiento] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 1 JPA repository interface.
+2025-11-11T18:46:59.141-05:00  INFO 24476 --- [Movimiento] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 87 (http)
+2025-11-11T18:46:59.155-05:00  INFO 24476 --- [Movimiento] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-11T18:46:59.156-05:00  INFO 24476 --- [Movimiento] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2025-11-11T18:46:59.239-05:00  INFO 24476 --- [Movimiento] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-11T18:46:59.240-05:00  INFO 24476 --- [Movimiento] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1976 ms
+2025-11-11T18:46:59.582-05:00  INFO 24476 --- [Movimiento] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-11T18:46:59.748-05:00  INFO 24476 --- [Movimiento] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-11-11T18:46:59.790-05:00  INFO 24476 --- [Movimiento] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-11T18:47:00.079-05:00  INFO 24476 --- [Movimiento] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-11T18:47:00.106-05:00  INFO 24476 --- [Movimiento] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-11T18:47:01.339-05:00  WARN 24476 --- [Movimiento] [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1049, SQLState: 42000
+2025-11-11T18:47:01.340-05:00 ERROR 24476 --- [Movimiento] [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Unknown database 'bd_movimiento'
+2025-11-11T18:47:01.341-05:00  WARN 24476 --- [Movimiento] [main] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata
+
+org.hibernate.exception.SQLGrammarException: unable to obtain isolated JDBC connection [Unknown database 'bd_movimiento'] [n/a]
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:91) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:116) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:292) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:124) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:78) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:221) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:189) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.1.13.jar:6.1.13]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.1.13.jar:6.1.13]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.1.13.jar:6.1.13]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.1.13.jar:6.1.13]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.4.jar:3.3.4]
+	at com.example.Movimiento.MovimientoApplication.main(MovimientoApplication.java:10) ~[classes/:na]
+Caused by: java.sql.SQLSyntaxErrorException: Unknown database 'bd_movimiento'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:815) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:438) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:189) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111) ~[HikariCP-5.1.0.jar:na]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:439) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:61) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	... 35 common frames omitted
+
+2025-11-11T18:47:01.346-05:00 ERROR 24476 --- [Movimiento] [main] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+2025-11-11T18:47:01.347-05:00  WARN 24476 --- [Movimiento] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+2025-11-11T18:47:01.350-05:00  INFO 24476 --- [Movimiento] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-11-11T18:47:01.361-05:00  INFO 24476 --- [Movimiento] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-11-11T18:47:01.379-05:00 ERROR 24476 --- [Movimiento] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1806) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.4.jar:3.3.4]
+	at com.example.Movimiento.MovimientoApplication.main(MovimientoApplication.java:10) ~[classes/:na]
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:276) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:221) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:189) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.1.13.jar:6.1.13]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.1.13.jar:6.1.13]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.1.13.jar:6.1.13]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.1.13.jar:6.1.13]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802) ~[spring-beans-6.1.13.jar:6.1.13]
+	... 15 common frames omitted
+Caused by: org.hibernate.HibernateException: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:191) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:87) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentWithDefaults(JdbcEnvironmentInitiator.java:153) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:364) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:124) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:78) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	... 30 common frames omitted
+
+2025-11-11T18:47:32.636-05:00  INFO 14320 --- [Movimiento] [main] c.e.Movimiento.MovimientoApplication     : Starting MovimientoApplication using Java 17.0.11 with PID 14320 (C:\Users\Leonardo Campos\Desktop\MicroserviciosParcial\Movimiento\target\classes started by Leonardo Campos in C:\Users\Leonardo Campos\Desktop\MicroserviciosParcial)
+2025-11-11T18:47:32.638-05:00  INFO 14320 --- [Movimiento] [main] c.e.Movimiento.MovimientoApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-11-11T18:47:33.502-05:00  INFO 14320 --- [Movimiento] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-11T18:47:33.570-05:00  INFO 14320 --- [Movimiento] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 1 JPA repository interface.
+2025-11-11T18:47:34.293-05:00  INFO 14320 --- [Movimiento] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 87 (http)
+2025-11-11T18:47:34.309-05:00  INFO 14320 --- [Movimiento] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-11T18:47:34.310-05:00  INFO 14320 --- [Movimiento] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2025-11-11T18:47:34.382-05:00  INFO 14320 --- [Movimiento] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-11T18:47:34.383-05:00  INFO 14320 --- [Movimiento] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1683 ms
+2025-11-11T18:47:34.659-05:00  INFO 14320 --- [Movimiento] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-11T18:47:34.746-05:00  INFO 14320 --- [Movimiento] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-11-11T18:47:34.773-05:00  INFO 14320 --- [Movimiento] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-11T18:47:35.049-05:00  INFO 14320 --- [Movimiento] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-11T18:47:35.099-05:00  INFO 14320 --- [Movimiento] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-11T18:47:35.335-05:00  INFO 14320 --- [Movimiento] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2a631049
+2025-11-11T18:47:35.336-05:00  INFO 14320 --- [Movimiento] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-11T18:47:36.074-05:00  INFO 14320 --- [Movimiento] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-11T18:47:36.163-05:00  INFO 14320 --- [Movimiento] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-11T18:47:36.730-05:00  WARN 14320 --- [Movimiento] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-11T18:47:37.511-05:00  INFO 14320 --- [Movimiento] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 87 (http) with context path '/'
+2025-11-11T18:47:37.522-05:00  INFO 14320 --- [Movimiento] [main] c.e.Movimiento.MovimientoApplication     : Started MovimientoApplication in 5.267 seconds (process running for 5.58)
+2025-11-11T18:48:21.741-05:00  INFO 23344 --- [Movimiento] [main] c.e.Movimiento.MovimientoApplication     : Starting MovimientoApplication using Java 17.0.11 with PID 23344 (C:\Users\Leonardo Campos\Desktop\MicroserviciosParcial\Movimiento\target\classes started by Leonardo Campos in C:\Users\Leonardo Campos\Desktop\MicroserviciosParcial)
+2025-11-11T18:48:21.744-05:00  INFO 23344 --- [Movimiento] [main] c.e.Movimiento.MovimientoApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-11-11T18:48:22.678-05:00  INFO 23344 --- [Movimiento] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-11T18:48:22.731-05:00  INFO 23344 --- [Movimiento] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 1 JPA repository interface.
+2025-11-11T18:48:23.510-05:00  INFO 23344 --- [Movimiento] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 87 (http)
+2025-11-11T18:48:23.522-05:00  INFO 23344 --- [Movimiento] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-11T18:48:23.523-05:00  INFO 23344 --- [Movimiento] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2025-11-11T18:48:23.604-05:00  INFO 23344 --- [Movimiento] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-11T18:48:23.605-05:00  INFO 23344 --- [Movimiento] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1803 ms
+2025-11-11T18:48:23.911-05:00  INFO 23344 --- [Movimiento] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-11T18:48:24.002-05:00  INFO 23344 --- [Movimiento] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-11-11T18:48:24.033-05:00  INFO 23344 --- [Movimiento] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-11T18:48:24.295-05:00  INFO 23344 --- [Movimiento] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-11T18:48:24.325-05:00  INFO 23344 --- [Movimiento] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-11T18:48:24.545-05:00  INFO 23344 --- [Movimiento] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2c815fdc
+2025-11-11T18:48:24.546-05:00  INFO 23344 --- [Movimiento] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-11T18:48:25.322-05:00  INFO 23344 --- [Movimiento] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-11T18:48:25.372-05:00  INFO 23344 --- [Movimiento] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-11T18:48:25.919-05:00  WARN 23344 --- [Movimiento] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-11T18:48:26.471-05:00  INFO 23344 --- [Movimiento] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 87 (http) with context path '/'
+2025-11-11T18:48:26.483-05:00  INFO 23344 --- [Movimiento] [main] c.e.Movimiento.MovimientoApplication     : Started MovimientoApplication in 5.148 seconds (process running for 5.548)
+2025-11-11T18:50:54.435-05:00  INFO 22612 --- [Movimiento] [main] c.e.Movimiento.MovimientoApplication     : Starting MovimientoApplication using Java 17.0.11 with PID 22612 (C:\Users\Leonardo Campos\Desktop\MicroserviciosParcial\Movimiento\target\classes started by Leonardo Campos in C:\Users\Leonardo Campos\Desktop\MicroserviciosParcial)
+2025-11-11T18:50:54.437-05:00  INFO 22612 --- [Movimiento] [main] c.e.Movimiento.MovimientoApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-11-11T18:50:55.556-05:00  INFO 22612 --- [Movimiento] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-11T18:50:55.609-05:00  INFO 22612 --- [Movimiento] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 1 JPA repository interface.
+2025-11-11T18:50:56.631-05:00  INFO 22612 --- [Movimiento] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 87 (http)
+2025-11-11T18:50:56.641-05:00  INFO 22612 --- [Movimiento] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-11T18:50:56.642-05:00  INFO 22612 --- [Movimiento] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2025-11-11T18:50:56.718-05:00  INFO 22612 --- [Movimiento] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-11T18:50:56.719-05:00  INFO 22612 --- [Movimiento] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2228 ms
+2025-11-11T18:50:57.080-05:00  INFO 22612 --- [Movimiento] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-11T18:50:57.232-05:00  INFO 22612 --- [Movimiento] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-11-11T18:50:57.264-05:00  INFO 22612 --- [Movimiento] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-11T18:50:57.552-05:00  INFO 22612 --- [Movimiento] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-11T18:50:57.570-05:00  INFO 22612 --- [Movimiento] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-11T18:50:57.798-05:00  INFO 22612 --- [Movimiento] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6181bc4a
+2025-11-11T18:50:57.800-05:00  INFO 22612 --- [Movimiento] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-11T18:50:58.644-05:00  INFO 22612 --- [Movimiento] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-11T18:50:58.681-05:00  INFO 22612 --- [Movimiento] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-11T18:50:59.306-05:00  WARN 22612 --- [Movimiento] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-11T18:50:59.996-05:00  INFO 22612 --- [Movimiento] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 87 (http) with context path '/'
+2025-11-11T18:51:00.012-05:00  INFO 22612 --- [Movimiento] [main] c.e.Movimiento.MovimientoApplication     : Started MovimientoApplication in 5.961 seconds (process running for 6.269)
+2025-11-11T18:53:13.616-05:00  INFO 6440 --- [Movimiento] [main] c.e.Movimiento.MovimientoApplication     : Starting MovimientoApplication using Java 17.0.11 with PID 6440 (C:\Users\Leonardo Campos\Desktop\MicroserviciosParcial\Movimiento\target\classes started by Leonardo Campos in C:\Users\Leonardo Campos\Desktop\MicroserviciosParcial)
+2025-11-11T18:53:13.618-05:00  INFO 6440 --- [Movimiento] [main] c.e.Movimiento.MovimientoApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-11-11T18:53:14.567-05:00  INFO 6440 --- [Movimiento] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-11T18:53:14.647-05:00  INFO 6440 --- [Movimiento] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 1 JPA repository interface.
+2025-11-11T18:53:15.685-05:00  INFO 6440 --- [Movimiento] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 87 (http)
+2025-11-11T18:53:15.696-05:00  INFO 6440 --- [Movimiento] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-11T18:53:15.696-05:00  INFO 6440 --- [Movimiento] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2025-11-11T18:53:15.790-05:00  INFO 6440 --- [Movimiento] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-11T18:53:15.791-05:00  INFO 6440 --- [Movimiento] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2117 ms
+2025-11-11T18:53:16.138-05:00  INFO 6440 --- [Movimiento] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-11T18:53:16.303-05:00  INFO 6440 --- [Movimiento] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-11-11T18:53:16.338-05:00  INFO 6440 --- [Movimiento] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-11T18:53:16.636-05:00  INFO 6440 --- [Movimiento] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-11T18:53:16.654-05:00  INFO 6440 --- [Movimiento] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-11T18:53:16.878-05:00  INFO 6440 --- [Movimiento] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@693f2c89
+2025-11-11T18:53:16.879-05:00  INFO 6440 --- [Movimiento] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-11T18:53:17.648-05:00  INFO 6440 --- [Movimiento] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-11T18:53:17.686-05:00  INFO 6440 --- [Movimiento] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-11T18:53:18.225-05:00  WARN 6440 --- [Movimiento] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-11T18:53:18.864-05:00  INFO 6440 --- [Movimiento] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 87 (http) with context path '/'
+2025-11-11T18:53:18.874-05:00  INFO 6440 --- [Movimiento] [main] c.e.Movimiento.MovimientoApplication     : Started MovimientoApplication in 5.625 seconds (process running for 5.93)
+2025-11-11T18:56:14.063-05:00  INFO 13416 --- [Movimiento] [main] c.e.Movimiento.MovimientoApplication     : Starting MovimientoApplication using Java 17.0.11 with PID 13416 (C:\Users\Leonardo Campos\Desktop\Parcial\MicroserviciosParcial\Movimiento\target\classes started by Leonardo Campos in C:\Users\Leonardo Campos\Desktop\Parcial\MicroserviciosParcial)
+2025-11-11T18:56:14.066-05:00  INFO 13416 --- [Movimiento] [main] c.e.Movimiento.MovimientoApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-11-11T18:56:15.140-05:00  INFO 13416 --- [Movimiento] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-11T18:56:15.200-05:00  INFO 13416 --- [Movimiento] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 1 JPA repository interface.
+2025-11-11T18:56:16.251-05:00  INFO 13416 --- [Movimiento] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 87 (http)
+2025-11-11T18:56:16.265-05:00  INFO 13416 --- [Movimiento] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-11T18:56:16.265-05:00  INFO 13416 --- [Movimiento] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2025-11-11T18:56:16.346-05:00  INFO 13416 --- [Movimiento] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-11T18:56:16.347-05:00  INFO 13416 --- [Movimiento] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2213 ms
+2025-11-11T18:56:16.683-05:00  INFO 13416 --- [Movimiento] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-11T18:56:16.828-05:00  INFO 13416 --- [Movimiento] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-11-11T18:56:16.865-05:00  INFO 13416 --- [Movimiento] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-11T18:56:17.148-05:00  INFO 13416 --- [Movimiento] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-11T18:56:17.169-05:00  INFO 13416 --- [Movimiento] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-11T18:56:17.394-05:00  INFO 13416 --- [Movimiento] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6181bc4a
+2025-11-11T18:56:17.396-05:00  INFO 13416 --- [Movimiento] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-11T18:56:18.127-05:00  INFO 13416 --- [Movimiento] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-11T18:56:18.163-05:00  INFO 13416 --- [Movimiento] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-11T18:56:18.766-05:00  WARN 13416 --- [Movimiento] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-11T18:56:19.465-05:00  INFO 13416 --- [Movimiento] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 87 (http) with context path '/'
+2025-11-11T18:56:19.481-05:00  INFO 13416 --- [Movimiento] [main] c.e.Movimiento.MovimientoApplication     : Started MovimientoApplication in 5.782 seconds (process running for 6.077)
+2025-11-11T18:58:00.269-05:00  INFO 14452 --- [Movimiento] [main] c.e.Movimiento.MovimientoApplication     : Starting MovimientoApplication using Java 17.0.11 with PID 14452 (C:\Users\Leonardo Campos\Desktop\Parcial\MicroserviciosParcial\Movimiento\target\classes started by Leonardo Campos in C:\Users\Leonardo Campos\Desktop\Parcial\MicroserviciosParcial)
+2025-11-11T18:58:00.271-05:00  INFO 14452 --- [Movimiento] [main] c.e.Movimiento.MovimientoApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-11-11T18:58:01.320-05:00  INFO 14452 --- [Movimiento] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-11T18:58:01.390-05:00  INFO 14452 --- [Movimiento] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 1 JPA repository interface.
+2025-11-11T18:58:02.254-05:00  INFO 14452 --- [Movimiento] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 87 (http)
+2025-11-11T18:58:02.265-05:00  INFO 14452 --- [Movimiento] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-11T18:58:02.265-05:00  INFO 14452 --- [Movimiento] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2025-11-11T18:58:02.349-05:00  INFO 14452 --- [Movimiento] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-11T18:58:02.350-05:00  INFO 14452 --- [Movimiento] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2021 ms
+2025-11-11T18:58:02.683-05:00  INFO 14452 --- [Movimiento] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-11T18:58:02.837-05:00  INFO 14452 --- [Movimiento] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-11-11T18:58:02.874-05:00  INFO 14452 --- [Movimiento] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-11T18:58:03.185-05:00  INFO 14452 --- [Movimiento] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-11T18:58:03.205-05:00  INFO 14452 --- [Movimiento] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-11T18:58:03.437-05:00  INFO 14452 --- [Movimiento] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@61e14b53
+2025-11-11T18:58:03.439-05:00  INFO 14452 --- [Movimiento] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-11T18:58:04.154-05:00  INFO 14452 --- [Movimiento] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-11T18:58:04.190-05:00  INFO 14452 --- [Movimiento] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-11T18:58:04.698-05:00  WARN 14452 --- [Movimiento] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-11T18:58:05.453-05:00  INFO 14452 --- [Movimiento] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 87 (http) with context path '/'
+2025-11-11T18:58:05.466-05:00  INFO 14452 --- [Movimiento] [main] c.e.Movimiento.MovimientoApplication     : Started MovimientoApplication in 5.606 seconds (process running for 5.912)
+2025-11-11T18:59:02.119-05:00  INFO 14652 --- [Movimiento] [main] c.e.Movimiento.MovimientoApplication     : Starting MovimientoApplication using Java 17.0.11 with PID 14652 (C:\Users\Leonardo Campos\Desktop\Parcial\MicroserviciosParcial\Movimiento\target\classes started by Leonardo Campos in C:\Users\Leonardo Campos\Desktop\Parcial\MicroserviciosParcial)
+2025-11-11T18:59:02.121-05:00  INFO 14652 --- [Movimiento] [main] c.e.Movimiento.MovimientoApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-11-11T18:59:02.984-05:00  INFO 14652 --- [Movimiento] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-11T18:59:03.044-05:00  INFO 14652 --- [Movimiento] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 1 JPA repository interface.
+2025-11-11T18:59:03.879-05:00  INFO 14652 --- [Movimiento] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 89 (http)
+2025-11-11T18:59:03.889-05:00  INFO 14652 --- [Movimiento] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-11T18:59:03.890-05:00  INFO 14652 --- [Movimiento] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2025-11-11T18:59:03.980-05:00  INFO 14652 --- [Movimiento] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-11T18:59:03.980-05:00  INFO 14652 --- [Movimiento] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1795 ms
+2025-11-11T18:59:04.259-05:00  INFO 14652 --- [Movimiento] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-11T18:59:04.344-05:00  INFO 14652 --- [Movimiento] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-11-11T18:59:04.374-05:00  INFO 14652 --- [Movimiento] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-11T18:59:04.636-05:00  INFO 14652 --- [Movimiento] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-11T18:59:04.668-05:00  INFO 14652 --- [Movimiento] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-11T18:59:04.919-05:00  INFO 14652 --- [Movimiento] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7ff09659
+2025-11-11T18:59:04.921-05:00  INFO 14652 --- [Movimiento] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-11T18:59:05.692-05:00  INFO 14652 --- [Movimiento] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-11T18:59:05.735-05:00  INFO 14652 --- [Movimiento] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-11T18:59:06.274-05:00  WARN 14652 --- [Movimiento] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-11T18:59:06.958-05:00  INFO 14652 --- [Movimiento] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 89 (http) with context path '/'
+2025-11-11T18:59:06.975-05:00  INFO 14652 --- [Movimiento] [main] c.e.Movimiento.MovimientoApplication     : Started MovimientoApplication in 5.222 seconds (process running for 5.526)
+2025-11-11T18:59:16.008-05:00  INFO 14652 --- [Movimiento] [http-nio-89-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-11T18:59:16.009-05:00  INFO 14652 --- [Movimiento] [http-nio-89-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-11T18:59:16.011-05:00  INFO 14652 --- [Movimiento] [http-nio-89-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-11-11T18:59:16.567-05:00  INFO 14652 --- [Movimiento] [http-nio-89-exec-9] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 271 ms
+2025-11-11T18:59:46.083-05:00  INFO 14652 --- [Movimiento] [http-nio-89-exec-10] c.e.M.servicio.Movimientoservicios       : Buscando movimiento con ID: 1
+2025-11-11T18:59:46.162-05:00  WARN 14652 --- [Movimiento] [http-nio-89-exec-10] c.e.M.servicio.Movimientoservicios       : Movimiento no encontrado con ID: 1
+2025-11-11T19:00:27.524-05:00  WARN 14652 --- [Movimiento] [http-nio-89-exec-4] c.e.M.e.Controladordeexcepcionesglobal   : Error de validación: estado: El estado no puede ser nulo | Ruta: uri=/movimientos/crear
+2025-11-11T19:00:38.312-05:00  INFO 14652 --- [Movimiento] [http-nio-89-exec-6] c.e.M.servicio.Movimientoservicios       : Creando movimiento ? ID Artículo: 2, Tipo: venta, Cantidad: 2, Estado: true
+2025-11-11T19:00:38.407-05:00  INFO 14652 --- [Movimiento] [http-nio-89-exec-6] c.e.M.servicio.Movimientoservicios       : Movimiento creado exitosamente con ID: 1
+2025-11-11T19:00:51.084-05:00  INFO 14652 --- [Movimiento] [http-nio-89-exec-8] c.e.M.servicio.Movimientoservicios       : Buscando movimiento con ID: 1
+2025-11-11T19:00:51.102-05:00  INFO 14652 --- [Movimiento] [http-nio-89-exec-8] c.e.M.servicio.Movimientoservicios       : Movimiento encontrado: 1
+2025-11-11T19:00:51.102-05:00  INFO 14652 --- [Movimiento] [http-nio-89-exec-8] c.e.M.servicio.Movimientoservicios       : Guardando cambios del movimiento con ID: 1
+2025-11-11T19:03:44.345-05:00  WARN 14652 --- [Movimiento] [http-nio-89-exec-9] c.e.M.e.Controladordeexcepcionesglobal   : Error de validación: cantidad: La cantidad no puede ser nula | Ruta: uri=/movimientos/crear
